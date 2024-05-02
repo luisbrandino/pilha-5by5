@@ -32,7 +32,7 @@
             return node;
         }
 
-        public void Search(string title)
+        public void Search(string? title)
         {
             if (this.IsEmpty())
                 return;
@@ -43,7 +43,7 @@
 
             while (current != null)
             {
-                if (current.GetTitle().ToLower() == title.ToLower())
+                if (current.GetTitle().ToLower() == title?.ToLower())
                 {
                     Console.WriteLine($"Livro encontrado: {current.GetTitle()}");
                     bookExists = true;

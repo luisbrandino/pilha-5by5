@@ -76,9 +76,8 @@ void searchBook()
     }
 
     Console.Write("Digite o nome do livro que deseja procurar: ");
-    string title = Console.ReadLine();
 
-    stack.Search(title);
+    stack.Search(Console.ReadLine());
     waitForAnyKey();
 }
 
